@@ -296,8 +296,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputListener: {fileID: 949234304}
-  prefabTransform: {fileID: 2664807528838413873, guid: abbbe249757fd12498f873523fbe2ca2, type: 3}
+  prefab: {fileID: 8711265443794421348, guid: abbbe249757fd12498f873523fbe2ca2, type: 3}
   playerTransform: {fileID: 1292141280}
+  queueLenght: 10
 --- !u!1 &1292141278
 GameObject:
   m_ObjectHideFlags: 0
