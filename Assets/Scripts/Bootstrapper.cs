@@ -19,7 +19,7 @@ namespace Command
             //spawnPrefab = new SpawnPrefabCommand(prefab);
             commandInvoker = new CommandInvoker(queueLenght);
             //inputListener.Construct(movePlayer, spawnPrefab, commandInvoker);
-            inputListener.Construct(movePlayer, prefab,  commandInvoker);
+            inputListener.Construct(movePlayer, prefab, commandInvoker);
         }
 
     }

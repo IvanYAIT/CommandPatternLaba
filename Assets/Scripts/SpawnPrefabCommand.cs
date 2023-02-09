@@ -9,16 +9,15 @@ namespace Command
         private List<GameObject> _spawnedPrefabs;
         private Vector2 _position;
 
-        public SpawnPrefabCommand(GameObject prefab, Vector2 position)
+        public SpawnPrefabCommand(Vector2 position)
         {
-            _prefab = prefab;
             _spawnedPrefabs = new List<GameObject>();
             _position = position;
         }
 
-        public void Invoke()
+        public void Invoke(GameObject prefab)
         {
-            GameObject spawnedPrefab = GameObject.Instantiate(_prefab, _position, Quaternion.identity);
+            GameObject spawnedPrefab = GameObject.Instantiate(prefab, _position, Quaternion.identity);
             _spawnedPrefabs.Add(spawnedPrefab);
         }
 
